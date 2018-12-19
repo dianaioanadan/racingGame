@@ -16,11 +16,10 @@ public class App
         //declare a variable and instantiating a Car object
         //this is also a called initalizing a variable
        Car firstCompetitor = new Car(new Engine());
-       firstCompetitor.name = "Dacia";
-       firstCompetitor.colour = "red";
+       firstCompetitor.setName("Dacia");
+       firstCompetitor.setColour("black");
        firstCompetitor.doorCount = 5;
-       firstCompetitor.mileage = 9.5;
-
+       firstCompetitor.setMileage(9.5);
 
        // sout prints a message to the console
         System.out.println(firstEngine.manufacturer);
@@ -28,7 +27,7 @@ public class App
        firstCompetitor.engine.manufacturer = "BMW";
 
         Car secondCompetitor = new Car(new Engine());
-        secondCompetitor.name = "Golf";
+        secondCompetitor.setName("Golf");
 
         System.out.println(firstEngine.manufacturer);
         System.out.println(firstCompetitor.engine.manufacturer);
