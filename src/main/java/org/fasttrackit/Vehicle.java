@@ -1,6 +1,9 @@
 package org.fasttrackit;
 
 public class Vehicle {
+
+    public static int applicationTotalNumberOfVehicles;
+
     private String name;
     private String colour;
     private double mileage;
@@ -15,6 +18,10 @@ public class Vehicle {
 
         return distance;
     };
+
+    public Vehicle() {
+        applicationTotalNumberOfVehicles++;
+    }
 
     public String getName() {
         return name;
