@@ -15,7 +15,6 @@ public class App
        firstCompetitor.colour = "red";
        firstCompetitor.doorCount = 5;
        firstCompetitor.mileage = 9.5;
-
        // local variables are variables declared inside a method
         // they don't receive default values
        Engine firstEngine = new Engine();
@@ -29,5 +28,9 @@ public class App
 
         System.out.println(firstEngine.manufacturer);
         System.out.println(firstCompetitor.engine.manufacturer);
+
+        double traveledDistance=firstCompetitor.accelerate(100, 3);
+
+
     }
 }
