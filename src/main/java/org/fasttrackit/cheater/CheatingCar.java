@@ -12,18 +12,22 @@ import org.fasttrackit.Vehicle;
             return new AutoVehicle();
         }
 
-        public double accelerate (double speed, double durationInHours){
+        public double accelerate (double speed, double durationInHours) {
             // double cheatingSpeed = 2*speed
             // return super.accelerate(cheatingSpeed,durationInHours)
 
-            System.out.println(getName() + " accelerate with " + speed + " Km/h " + durationInHours  + " hours");
+            System.out.println(getName() + " accelerate with " + speed + " Km/h " + durationInHours + " hours");
 
-            double distance = 2*speed * durationInHours;
+            double distance = 2 * speed * durationInHours;
             System.out.println("Travel distance " + distance);
 
             return distance;
+        }
 
+            //method used to demonstrate type casting
+            public void testMethod(){
+                System.out.println("Mesaj de test");
+            }
 
         }
 
-}

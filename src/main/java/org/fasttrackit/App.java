@@ -38,6 +38,11 @@ public class App
 //
 //        AutoVehicle autoVehicle= new AutoVehicle(new Engine());
 
+        Vehicle cheatingCar = new CheatingCar();
+        cheatingCar.accelerate(10, 2);
+
+        //type casting
+        ((CheatingCar) cheatingCar).testMethod();
 
         Engine firstEngine = new Engine();
         firstEngine.manufacturer = "Renault";
@@ -47,14 +52,14 @@ public class App
         Car firstCompetitor = new Car(new Engine());
         firstCompetitor.setName("Dacia");
 
-        double distancefirstcar = firstCompetitor.accelerate(70);
-        System.out.println("Prima masina accelereaza cu " + distancefirstcar);
+        double distanceFirstCar = firstCompetitor.accelerate(70);
+        System.out.println("Prima masina accelereaza cu " + distanceFirstCar);
 
         CheatingCar secondCompetitor = new CheatingCar();
         secondCompetitor.setName("Test1");
 
-        double distancesecondcar = secondCompetitor.accelerate(70);
-        System.out.println("A doua masina accelereaza cu " + distancesecondcar);
+        double distanceSecondCar = secondCompetitor.accelerate(70);
+        System.out.println("A doua masina accelereaza cu " + distanceSecondCar);
 
 
 
