@@ -19,6 +19,12 @@ public class Vehicle {
         return distance;
     };
 
+    //method overloading
+    public double accelerate (double speed){
+
+        return accelerate(speed,1);
+    }
+
     public Vehicle() {
         applicationTotalNumberOfVehicles++;
     }
