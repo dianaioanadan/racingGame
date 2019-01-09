@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.fasttrackit.cheater.CheatingCar;
+
 /**
  * Hello world!
  *
@@ -36,15 +38,35 @@ public class App
 //
 //        AutoVehicle autoVehicle= new AutoVehicle(new Engine());
 
-        Vehicle vehicle = new Vehicle();
-        Vehicle.applicationTotalNumberOfVehicles =1;
 
-        System.out.println("Total from vehicle 1 +" + vehicle.applicationTotalNumberOfVehicles);
+        Engine firstEngine = new Engine();
+        firstEngine.manufacturer = "Renault";
 
-        Vehicle vehicle2 = new Vehicle();
-        Vehicle.applicationTotalNumberOfVehicles =2;
+        System.out.println(firstEngine);
 
-        System.out.println("Total from vehicle 2 +" + Vehicle.applicationTotalNumberOfVehicles);
-        System.out.println("Total from vehicle 1 +" + Vehicle.applicationTotalNumberOfVehicles);
+        Car firstCompetitor = new Car(new Engine());
+        firstCompetitor.setName("Dacia");
+
+        double distancefirstcar = firstCompetitor.accelerate(70);
+        System.out.println("Prima masina accelereaza cu " + distancefirstcar);
+
+        CheatingCar secondCompetitor = new CheatingCar();
+        secondCompetitor.setName("Test1");
+
+        double distancesecondcar = secondCompetitor.accelerate(70);
+        System.out.println("A doua masina accelereaza cu " + distancesecondcar);
+
+
+
+//        Vehicle vehicle = new Vehicle();
+//        Vehicle.applicationTotalNumberOfVehicles =1;
+//
+//        System.out.println("Total from vehicle 1 +" + vehicle.applicationTotalNumberOfVehicles);
+//
+//        Vehicle vehicle2 = new Vehicle();
+//        Vehicle.applicationTotalNumberOfVehicles =2;
+//
+//        System.out.println("Total from vehicle 2 +" + Vehicle.applicationTotalNumberOfVehicles);
+//        System.out.println("Total from vehicle 1 +" + Vehicle.applicationTotalNumberOfVehicles);
     }
 }

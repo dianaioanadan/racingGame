@@ -24,6 +24,10 @@ public class Vehicle {
 
         return accelerate(speed,1);
     }
+    //method used just  to demonstrate co-varinat return types
+    public Vehicle returnSomeVehicle(){
+        return this;
+    }
 
     public Vehicle() {
         applicationTotalNumberOfVehicles++;
