@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-import org.fasttrackit.cheater.CheatingCar;
-
 /**
  * Hello world!
  *
@@ -10,6 +8,19 @@ public class App
 {
     public static void main( String[] args )
     {
+
+        Game game = new Game();
+        game.addTrack(0,new Track("Highway",300));
+        game.addTrack(1,new Track("Seaside",100));
+
+        game.displayAvailableTracks();
+
+
+
+
+
+
+
 //        // local variables are variables declared inside a method
 //        // they don't receive default values
 //        Engine firstEngine = new Engine();
@@ -39,32 +50,32 @@ public class App
 //        AutoVehicle autoVehicle= new AutoVehicle(new Engine());
 
         // modulo operator
-        System.out.println(4%2);
-        System.out.println((4%3));
-
-        Vehicle cheatingCar = new CheatingCar();
-        cheatingCar.accelerate(10, 2);
-
-        //type casting
-        ((CheatingCar) cheatingCar).testMethod();
-
-        Engine firstEngine = new Engine();
-        firstEngine.manufacturer = "Renault";
-
-        System.out.println(firstEngine);
-
-        Car firstCompetitor = new Car(new Engine());
-        firstCompetitor.setName("Dacia");
-
-        double distanceFirstCar = firstCompetitor.accelerate(70);
-        System.out.println("Prima masina accelereaza cu " + distanceFirstCar);
-
-        CheatingCar secondCompetitor = new CheatingCar();
-        secondCompetitor.setName("Test1");
-
-        double distanceSecondCar = secondCompetitor.accelerate(70);
-        System.out.println("A doua masina accelereaza cu " + distanceSecondCar);
-
+//        System.out.println(4%2);
+//        System.out.println((4%3));
+//
+//        Vehicle cheatingCar = new CheatingCar();
+//        cheatingCar.accelerate(10, 2);
+//
+//        //type casting
+//        ((CheatingCar) cheatingCar).testMethod();
+//
+//        Engine firstEngine = new Engine();
+//        firstEngine.manufacturer = "Renault";
+//
+//        System.out.println(firstEngine);
+//
+//        Car firstCompetitor = new Car(new Engine());
+//        firstCompetitor.setName("Dacia");
+//
+//        double distanceFirstCar = firstCompetitor.accelerate(70);
+//        System.out.println("Prima masina accelereaza cu " + distanceFirstCar);
+//
+//        CheatingCar secondCompetitor = new CheatingCar();
+//        secondCompetitor.setName("Test1");
+//
+//        double distanceSecondCar = secondCompetitor.accelerate(70);
+//        System.out.println("A doua masina accelereaza cu " + distanceSecondCar);
+//
 
 
 //        Vehicle vehicle = new Vehicle();
