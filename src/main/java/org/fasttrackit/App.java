@@ -38,6 +38,10 @@ public class App
 //
 //        AutoVehicle autoVehicle= new AutoVehicle(new Engine());
 
+        // modulo operator
+        System.out.println(4%2);
+        System.out.println((4%3));
+
         Vehicle cheatingCar = new CheatingCar();
         cheatingCar.accelerate(10, 2);
 
