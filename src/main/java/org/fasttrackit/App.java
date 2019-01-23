@@ -6,18 +6,11 @@ package org.fasttrackit;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) throws Exception {
 
         Game game = new Game();
 
-        game.addCompetitors(2);
-        game.displayCompetitors();
-
-        game.addTrack(0,new Track("Highway",300));
-        game.addTrack(1,new Track("Seaside",100));
-
-        game.displayAvailableTracks();
+        game.start();
 
 
 
